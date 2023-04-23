@@ -4,15 +4,15 @@ on: [pull_request]
 
 jobs:
   test:
-
+    name: Mit Coverage testen
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v1
+      - uses: browser-actions/setup-chrome@v1
       - name: Abhängigkeiten laden
         run: npm ci
       - name: Tests ausführen
-        run: npm run test
+        run: npm run test-cov-headless
       - name: Linter ausführen
         run: npm run lint
       - name: Upload coverage reports to Codecov
