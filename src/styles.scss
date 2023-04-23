@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import "fonts";
+
+body {
+  background-color: #0f0f17;
+
+  color: #e0e0e4;
+  font-family: 'Sen', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+}
