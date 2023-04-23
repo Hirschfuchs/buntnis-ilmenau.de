@@ -1,0 +1,41 @@
+name: Buntnis-Deployment Test
+
+on: [ main ]
+
+jobs:
+  build:
+    name: Bauen
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: browser-actions/setup-chrome@v1
+      - name: Abhängigkeiten laden
+        run: npm ci
+      - name: Projekt bauen
+        run: npm run build
+      - uses: actions/upload-artifact@master
+        with:
+          name: result
+          path: dist/**
+
+  deploy:
+    name: Deployen
+    runs-on: ubuntu-latest
+    steps:
+      - name: Vorbereiten
+        uses: actions/checkout@v3
+
+      - name: Hole gebautes Ergebnis
+        uses: actions/download-artifact@master
+        with:
+          name: result
+          path: dist/**
+
+      - name: FTP-Upload
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: test.buntnis.de
+          username: buntnis-test
+          password: ${{ secrets.FTP_PASSWORD_TEST }}
+          local-dir: dist/
+          server-dir: httpdocs/
