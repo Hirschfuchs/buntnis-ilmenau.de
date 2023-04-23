@@ -1,0 +1,19 @@
+name: Buntnis-Testing
+
+on: [pull_request]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Abhängigkeiten laden
+        run: npm ci
+      - name: Tests ausführen
+        run: npm run test
+      - name: Linter ausführen
+        run: npm run lint
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
