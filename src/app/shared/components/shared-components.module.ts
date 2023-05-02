@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
+import {MatButtonModule} from "@angular/material/button";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 
 
@@ -11,8 +13,10 @@ import { HeaderComponent } from './header/header.component';
     exports: [
         HeaderComponent
     ],
-    imports: [
-        CommonModule
-    ]
+  imports: [
+    CommonModule,
+    FontAwesomeModule,
+    MatButtonModule
+  ]
 })
 export class SharedComponentsModule { }
