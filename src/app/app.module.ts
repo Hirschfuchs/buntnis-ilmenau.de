@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {ComingSoonComponent} from "./wartung/coming-soon/coming-soon.component";
 import {NgOptimizedImage} from "@angular/common";
 import { SharedComponentsModule } from './shared/components/shared-components.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
@@ -13,6 +14,7 @@ import { SharedComponentsModule } from './shared/components/shared-components.mo
         ComingSoonComponent
     ],
     imports: [
+        BrowserAnimationsModule,
         BrowserModule,
         AppRoutingModule,
         NgOptimizedImage,
