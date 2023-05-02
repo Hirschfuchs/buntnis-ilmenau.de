@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {SharedComponentsModule} from "./shared/components/shared-components.module";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         BrowserModule,
         AppRoutingModule,
         SharedComponentsModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        FontAwesomeModule
     ],
   providers: [],
   bootstrap: [AppComponent]
