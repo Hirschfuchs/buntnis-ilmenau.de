@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {ComingSoonComponent} from "./wartung/coming-soon/coming-soon.component";
 import {NgOptimizedImage} from "@angular/common";
+import { SharedComponentsModule } from './shared/components/shared-components.module';
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import {NgOptimizedImage} from "@angular/common";
     imports: [
         BrowserModule,
         AppRoutingModule,
-        NgOptimizedImage
+        NgOptimizedImage,
+        SharedComponentsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
