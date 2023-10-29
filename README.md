@@ -4,9 +4,6 @@ Dieses Repository beinhaltet den Quellcode für die Webpräsenz des Buntnis Ilme
 
 Der aktuelle Entwicklungsstand kann auf `test.buntnis.de` betrachtet werden. Die Produktivversionen können auf `buntnis-ilmenau.de` (und `buntnis.de`) gefunden werden.
 
-
-
-
 ## Badges
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
@@ -16,12 +13,12 @@ Der aktuelle Entwicklungsstand kann auf `test.buntnis.de` betrachtet werden. Die
 ![Build](https://img.shields.io/github/actions/workflow/status/Hirschfuchs/buntnis-ilmenau.de/deploy-test.yml)
 ![Website-Zustand](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fbuntnis-ilmenau.de)
 ![Coverage](https://img.shields.io/codecov/c/github/Hirschfuchs/buntnis-ilmenau.de)
+
 ## Roadmap
 
 - einfache Startseite
 - Erweiterung mit Unterpunkten
 - Verknüpfung zu anderen Projekten, wie [stolpersteine-ilmenau.de](https://stolpersteine-ilmenau.de)
-
 
 ## Tech Stack
 
