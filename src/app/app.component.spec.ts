@@ -8,7 +8,7 @@ describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [RouterTestingModule, SharedComponentsModule],
-      declarations: [AppComponent, ComingSoonComponent],
+      declarations: [AppComponent, ComingSoonTestComponent],
     }).compileComponents();
   });
 
@@ -28,7 +28,9 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Buntnis Ilmenau');
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Buntnis Ilmenau',
+    );
   });
 });
 
@@ -36,4 +38,4 @@ describe('AppComponent', () => {
   selector: 'app-coming-soon',
   template: '',
 })
-export class ComingSoonComponent {}
+class ComingSoonTestComponent {}
