@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  width: 100%;
+
+  p {
+    width: 50%;
+  }
+
+  #huetchen {
+    width: 40%;
+    height: auto;
+    float: right;
+  }
+}
