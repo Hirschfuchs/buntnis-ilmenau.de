@@ -1,16 +1,28 @@
 <div>
-    <p>Hier findet ihr bald die Seite des in Ilmenau ansässigen „Buntnis“.</p>
-    <h3>Fortschritt:</h3>
-    <mat-progress-bar [value]="currentProgress" mode="determinate"></mat-progress-bar>
-    <ng-container *ngFor="let stepGroup of progressStepGroups">
-        <h4>{{stepGroup.name}}</h4>
-        <mat-list>
-            <mat-list-item *ngFor="let step of stepGroup.steps">
-                <span matListItemTitle>{{step.schritt}}</span>
-                <span matListItemMeta>{{step.beschreibung}}</span>
-                <mat-checkbox [ngModel]="step.erledigt ?? false" disabled></mat-checkbox>
-            </mat-list-item>
-        </mat-list>
-    </ng-container>
+  <p>Hier findet ihr bald die Seite des in Ilmenau ansässigen „Buntnis“.</p>
+  <h3>Fortschritt:</h3>
+  <mat-progress-bar
+    [value]="currentProgress"
+    mode="determinate"
+  ></mat-progress-bar>
+  <ng-container *ngFor="let stepGroup of progressStepGroups">
+    <h4>{{ stepGroup.name }}</h4>
+    <mat-list>
+      <mat-list-item *ngFor="let step of stepGroup.steps">
+        <span matListItemTitle>{{ step.schritt }}</span>
+        <span matListItemMeta>{{ step.beschreibung }}</span>
+        <mat-checkbox
+          [ngModel]="step.erledigt ?? false"
+          disabled
+        ></mat-checkbox>
+      </mat-list-item>
+    </mat-list>
+  </ng-container>
 </div>
-<img ngSrc="assets/2023/huetchen.png" id="huetchen" height="934" width="1209" alt="Ein Buntes Hütchen repräsentiert den Aufbau der Seite">
+<img
+  ngSrc="assets/2023/huetchen.png"
+  id="huetchen"
+  height="934"
+  width="1209"
+  alt="Ein Buntes Hütchen repräsentiert den Aufbau der Seite"
+/>

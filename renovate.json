@@ -1,8 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "description": "Renovate-Konfiguration für die Buntnis-Seite",
   "labels": ["👷 renovate"],
   "prHourlyLimit": 20,
