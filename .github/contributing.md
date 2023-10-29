@@ -8,7 +8,7 @@ Das Projekt ist eine Single-Page Angular-Applikation, die im Web ([buntnis-ilmen
 
 ### Sprache
 
-Das Projekt wird in der deutschen Sprache aufgesetzt. Internationalisierung könnte nochmal interessant werden, aber nicht in Code und Doku. 
+Das Projekt wird in der deutschen Sprache aufgesetzt. Internationalisierung könnte nochmal interessant werden, aber nicht in Code und Doku.
 
 ## Inhaltliche Voraussetzungen
 
@@ -25,11 +25,11 @@ Trotz allem - wir sind alle nur Menschen. Bestes Bemühen heißt auch, dass nich
 Kein Code ist fehlerfrei. Stimmt. Trotzdem wollen wir versuchen, eine möglichst fehlerfreie Codebasis zu wahren. Was heißt das in der Praxis?
 
 - Jeder Code soll ausführbar sein
-    - ein Commit soll funktionierenden Code bereitstellen. Ich möchte grundlegend zu jedem Commit zurücksetzen können, ohne dass die Applikation bricht
-    - jeder PR (& eigentlich auch Commit) soll die Tests fehlerfrei ausführen können. Die Deaktivierung einzelner Tests muss sinnvoll begründet und nicht dauerhaft sein (Issue bereits angelegt)
+  - ein Commit soll funktionierenden Code bereitstellen. Ich möchte grundlegend zu jedem Commit zurücksetzen können, ohne dass die Applikation bricht
+  - jeder PR (& eigentlich auch Commit) soll die Tests fehlerfrei ausführen können. Die Deaktivierung einzelner Tests muss sinnvoll begründet und nicht dauerhaft sein (Issue bereits angelegt)
 - Lint-Checks erfüllt
-    - wenn Sonar (oder ein anderer Linter) Bugs, Vulnerabilities oder Security Hotspots erkennt, müssen diese vor dem Einbau behoben werden
-    - weniger drastische Probleme, wie Code Smells sollten nach Möglichkeit auch entfernt oder so gering wie möglich gehalten werden. 10 Code Smells in einem kleinen Commit sind definitiv zu viel, aber auch 5 in einem großen Commit nicht schön. So wenig wie möglich - für die Wartbarkeit!
+  - wenn Sonar (oder ein anderer Linter) Bugs, Vulnerabilities oder Security Hotspots erkennt, müssen diese vor dem Einbau behoben werden
+  - weniger drastische Probleme, wie Code Smells sollten nach Möglichkeit auch entfernt oder so gering wie möglich gehalten werden. 10 Code Smells in einem kleinen Commit sind definitiv zu viel, aber auch 5 in einem großen Commit nicht schön. So wenig wie möglich - für die Wartbarkeit!
 
 ### TDD
 
