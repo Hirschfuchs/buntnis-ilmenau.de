@@ -1,17 +1,45 @@
 :host {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-
   width: 100%;
 
   p {
     width: 50%;
   }
 
+  mat-card {
+    padding: 2rem;
+  }
+
   #huetchen {
-    width: 40%;
     height: fit-content;
     float: right;
+
+    img {
+      width: 30%;
+      height: fit-content;
+    }
+  }
+}
+
+#infobereich {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  flex-wrap: wrap;
+
+  mat-card {
+    width: 45rem;
+    margin: 1rem;
+  }
+}
+
+#fortschrittsbereich {
+  margin-top: 3rem;
+
+  margin-left: 15%;
+  width: 70%;
+
+  mat-card {
+    margin: 1rem;
   }
 }

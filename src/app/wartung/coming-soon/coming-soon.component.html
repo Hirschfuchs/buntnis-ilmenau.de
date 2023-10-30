@@ -1,28 +1,46 @@
-<div>
-  <p>Hier findet ihr bald die Seite des in Ilmenau ansässigen „Buntnis“.</p>
-  <h3>Fortschritt:</h3>
-  <mat-progress-bar
-    [value]="currentProgress"
-    mode="determinate"
-  ></mat-progress-bar>
-  <ng-container *ngFor="let stepGroup of progressStepGroups">
-    <h4>{{ stepGroup.name }}</h4>
-    <mat-list>
-      <mat-list-item *ngFor="let step of stepGroup.steps">
-        <span matListItemTitle>{{ step.schritt }}</span>
-        <span matListItemMeta>{{ step.beschreibung }}</span>
-        <mat-checkbox
-          [ngModel]="step.erledigt ?? false"
-          disabled
-        ></mat-checkbox>
-      </mat-list-item>
-    </mat-list>
-  </ng-container>
+<div id="infobereich">
+  <mat-card id="huetchen">
+    <mat-card-header
+      ><img
+        ngSrc="assets/2023/huetchen.png"
+        height="934"
+        width="1209"
+        alt="Ein Buntes Hütchen repräsentiert den Aufbau der Seite"
+    /></mat-card-header>
+    <mat-card-content
+      ><p>
+        Hier findet ihr zukünftig die Seite des „Buntnis Ilmenau“. Als
+        Demokratiebündnis stehen wir für ein offenes und buntes Ilmenau.
+      </p></mat-card-content
+    >
+  </mat-card>
+
+  <mat-card>Weitere Links:</mat-card>
 </div>
-<img
-  ngSrc="assets/2023/huetchen.png"
-  id="huetchen"
-  height="934"
-  width="1209"
-  alt="Ein Buntes Hütchen repräsentiert den Aufbau der Seite"
-/>
+
+<div id="fortschrittsbereich">
+  <mat-card>
+    <h3>Fortschritt:</h3>
+    <mat-progress-bar
+      [value]="currentProgress"
+      mode="determinate"
+    ></mat-progress-bar>
+  </mat-card>
+  <splide>
+    <splide-slide *ngFor="let stepGroup of progressStepGroups">
+      <mat-card>
+        <h4>{{ stepGroup.name }}</h4>
+        <mat-list>
+          <mat-list-item *ngFor="let step of stepGroup.steps">
+            <span matListItemTitle>{{ step.schritt }}</span>
+            <span matListItemMeta>{{ step.beschreibung }}</span>
+            <mat-checkbox
+              [ngModel]="step.erledigt ?? false"
+              disabled
+            ></mat-checkbox>
+          </mat-list-item>
+        </mat-list>
+      </mat-card>
+    </splide-slide>
+  </splide>
+</div>
