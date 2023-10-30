@@ -62,6 +62,30 @@ export class ComingSoonComponent {
       ],
     },
   ];
+  externalLinks: {
+    name: string;
+    link: string;
+    image: { url: string; width: number; height: number };
+  }[] = [
+    {
+      name: 'Stolpersteine Ilmenau',
+      link: 'https://stolpersteine-ilmenau.de',
+      image: {
+        url: 'assets/2023/outlinks/stolpersteine-ilmenau-de.png',
+        width: 2519,
+        height: 1260,
+      },
+    },
+    {
+      name: 'MOBIT',
+      link: 'https://mobit.org',
+      image: {
+        url: 'assets/2023/outlinks/mobit.png',
+        width: 1101,
+        height: 249,
+      },
+    },
+  ];
 
   protected get currentProgress(): number {
     let erledigte = 0;

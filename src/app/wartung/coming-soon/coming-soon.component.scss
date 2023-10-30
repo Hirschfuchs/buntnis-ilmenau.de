@@ -41,6 +41,51 @@ mat-card {
       text-align: -webkit-center;
     }
   }
+
+  splide {
+    width: 100%;
+  }
+
+  .outlink {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .outlink-text {
+      visibility: hidden;
+
+      position: absolute;
+      width: 100%;
+      z-index: 20;
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+    }
+
+    .outlink-image {
+      width: 100%;
+      height: auto;
+    }
+
+    &:hover {
+      .outlink-text {
+        visibility: visible;
+      }
+
+      .outlink-image {
+        filter: brightness(50%);
+      }
+    }
+  }
+
+  .outlink-image:hover + .outlink-text {
+    visibility: visible;
+  }
+
+  .outlink-image:hover ~ * {
+    color: red;
+  }
 }
 
 #fortschrittsbereich {
