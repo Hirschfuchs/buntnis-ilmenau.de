@@ -12,6 +12,9 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatListModule } from '@angular/material/list';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { NgxSplideModule } from 'ngx-splide';
 
 @NgModule({
   declarations: [AppComponent, ComingSoonComponent],
@@ -27,6 +30,9 @@ import { FormsModule } from '@angular/forms';
     MatListModule,
     MatCheckboxModule,
     FormsModule,
+    MatCardModule,
+    MatGridListModule,
+    NgxSplideModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
