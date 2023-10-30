@@ -24,8 +24,12 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
-            "scripts": []
+            "styles": [
+              "src/styles.scss",
+              "node_modules/@splidejs/splide/dist/css/splide.min.css",
+              "node_modules/@splidejs/splide/dist/css/themes/splide-default.min.css"
+            ],
+            "scripts": ["node_modules/@splidejs/splide/dist/js/splide.js"]
           },
           "configurations": {
             "production": {
@@ -80,7 +84,7 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
-            "scripts": [],
+            "scripts": ["node_modules/@splidejs/splide/dist/js/splide.js"],
             "karmaConfig": "karma.conf.js"
           }
         },
