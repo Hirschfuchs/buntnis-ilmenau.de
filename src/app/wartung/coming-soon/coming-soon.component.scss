@@ -5,10 +5,6 @@
     width: 50%;
   }
 
-  mat-card {
-    padding: 2rem;
-  }
-
   #huetchen {
     height: fit-content;
     float: right;
@@ -20,16 +16,30 @@
   }
 }
 
+mat-card {
+  margin: 1rem;
+  padding: 2rem;
+}
+
 #infobereich {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
 
   flex-wrap: wrap;
 
   mat-card {
     width: 45rem;
-    margin: 1rem;
+
+    align-items: center;
+
+    mat-card-header,
+    mat-card-content {
+      justify-content: center;
+      text-align: center;
+      text-align: -webkit-center;
+    }
   }
 }
 
@@ -38,8 +48,8 @@
 
   margin-left: 15%;
   width: 70%;
+}
 
-  mat-card {
-    margin: 1rem;
-  }
+mat-card {
+  background: rgba(255, 255, 255, 0.7);
 }
