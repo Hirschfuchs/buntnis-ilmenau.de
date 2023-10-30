@@ -71,9 +71,15 @@ body {
   }
 }
 
+h1,
+h2 {
+  color: #fff;
+  text-shadow: #bc8155 0 0 7px;
+  text-align: center;
+}
+
 h1 {
   font-size: 3rem;
-  text-align: center;
 
   margin: 0;
   padding: 0.67em;
@@ -81,5 +87,4 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
-  text-align: center;
 }
