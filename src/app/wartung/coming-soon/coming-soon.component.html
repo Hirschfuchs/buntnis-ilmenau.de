@@ -15,7 +15,29 @@
     >
   </mat-card>
 
-  <mat-card>Weitere Links:</mat-card>
+  <mat-card>
+    <h3>Weitere Links:</h3>
+    <splide>
+      <splide-slide *ngFor="let externalLink of externalLinks">
+        <a
+          [href]="externalLink.link"
+          target="_blank"
+          rel="external"
+          class="outlink"
+        >
+          <span class="outlink-text">{{ externalLink.name }}</span>
+          <img
+            [ngSrc]="externalLink.image.url"
+            class="outlink-image"
+            [height]="externalLink.image.height"
+            [width]="externalLink.image.width"
+            alt="Ansicht von stolpersteine-ilmenau.de"
+            aria-description="Ansicht von stolpersteine-ilmenau.de. Ausgewählt ist das Kaufhaus der Familie Eichenbronner. Man sieht Bilder und Infotext"
+          />
+        </a>
+      </splide-slide>
+    </splide>
+  </mat-card>
 </div>
 
 <div id="fortschrittsbereich">
