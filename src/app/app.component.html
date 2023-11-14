@@ -1,9 +1,36 @@
+<div id="header">
 <header>
   <app-header></app-header>
 </header>
 
-<h1>Buntnis Ilmenau</h1>
-<h2>Für Demokratie und Weltoffenheit</h2>
+  <div id="headline-bereich">
+  <h1>Buntnis Ilmenau</h1>
+
+  <div id="nav-buttons">
+  <button mat-fab (click)="jumpTo('ueberUns')"><mat-icon>diversity_3</mat-icon></button>
+  <button mat-fab (click)="jumpTo('buntesInIlmenau')"><mat-icon>looks</mat-icon></button>
+  <button mat-fab (click)="jumpTo('kontakt')"><mat-icon>mail</mat-icon></button>
+  </div>
+  </div>
+</div>
+
+<div id="test-seite">
+<mat-card>
+  <mat-card-content
+  ><app-wer-sind-wir id="ueberUns"></app-wer-sind-wir></mat-card-content
+  >
+</mat-card>
+<mat-card>
+  <mat-card-content
+  ><app-buntes-ilmenau id="buntesInIlmenau"></app-buntes-ilmenau></mat-card-content
+  >
+</mat-card>
+<mat-card>
+  <mat-card-content
+  ><app-kontakt id="kontakt"></app-kontakt></mat-card-content
+  >
+</mat-card>
+</div>
 
 <app-coming-soon />
 

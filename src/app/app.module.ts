@@ -15,25 +15,32 @@ import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { NgxSplideModule } from 'ngx-splide';
+import {MatButtonModule} from "@angular/material/button";
+import {MatIconModule} from "@angular/material/icon";
+import { WerSindWirComponent } from './one-page-areas/wer-sind-wir/wer-sind-wir.component';
+import { BuntesIlmenauComponent } from './one-page-areas/buntes-ilmenau/buntes-ilmenau.component';
+import { KontaktComponent } from './one-page-areas/kontakt/kontakt.component';
 
 @NgModule({
-  declarations: [AppComponent, ComingSoonComponent],
-  imports: [
-    BrowserAnimationsModule,
-    BrowserModule,
-    AppRoutingModule,
-    NgOptimizedImage,
-    SharedComponentsModule,
-    BrowserAnimationsModule,
-    FontAwesomeModule,
-    MatProgressBarModule,
-    MatListModule,
-    MatCheckboxModule,
-    FormsModule,
-    MatCardModule,
-    MatGridListModule,
-    NgxSplideModule,
-  ],
+  declarations: [AppComponent, ComingSoonComponent, WerSindWirComponent, BuntesIlmenauComponent, KontaktComponent],
+    imports: [
+        BrowserAnimationsModule,
+        BrowserModule,
+        AppRoutingModule,
+        NgOptimizedImage,
+        SharedComponentsModule,
+        BrowserAnimationsModule,
+        FontAwesomeModule,
+        MatProgressBarModule,
+        MatListModule,
+        MatCheckboxModule,
+        FormsModule,
+        MatCardModule,
+        MatGridListModule,
+        NgxSplideModule,
+        MatButtonModule,
+      MatIconModule
+    ],
   providers: [],
   bootstrap: [AppComponent],
 })
