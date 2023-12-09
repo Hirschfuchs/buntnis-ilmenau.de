@@ -1,6 +1,6 @@
 <mat-toolbar>
   <span>LOGO (folgt)</span>
-  <nav mat-tab-nav-bar>
+  <nav mat-tab-nav-bar [tabPanel]="tabPanel">
     @for (buntnispage of mainpages; track buntnispage) {
     <a
       mat-tab-link
