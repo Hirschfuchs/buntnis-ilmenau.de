@@ -15,8 +15,8 @@ describe('ComingSoonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ComingSoonComponent],
       imports: [
+        ComingSoonComponent,
         FormsModule,
         MatCardModule,
         MatCheckboxModule,

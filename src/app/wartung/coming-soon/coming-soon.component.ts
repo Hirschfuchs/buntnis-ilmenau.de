@@ -1,8 +1,26 @@
 import { Component } from '@angular/core';
 import { ProgressStepGroup } from './types/progress-step.type';
+import { MatCardModule } from '@angular/material/card';
+import { NgxSplideModule } from 'ngx-splide';
+import { NgForOf, NgOptimizedImage } from '@angular/common';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatListModule } from '@angular/material/list';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
 
 @Component({
+  standalone: true,
   selector: 'app-coming-soon',
+  imports: [
+    MatCardModule,
+    NgxSplideModule,
+    NgOptimizedImage,
+    MatProgressBarModule,
+    MatListModule,
+    MatCheckboxModule,
+    FormsModule,
+    NgForOf,
+  ],
   templateUrl: './coming-soon.component.html',
   styleUrls: ['./coming-soon.component.scss'],
 })
