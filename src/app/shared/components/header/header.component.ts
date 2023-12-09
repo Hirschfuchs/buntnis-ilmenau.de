@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { MatTabNavPanel } from '@angular/material/tabs';
 import { pages } from '../../types/pages';
 
 @Component({
@@ -8,4 +9,7 @@ import { pages } from '../../types/pages';
 })
 export class HeaderComponent {
   mainpages = pages;
+
+  @Input()
+  tabPanel: MatTabNavPanel | undefined;
 }
