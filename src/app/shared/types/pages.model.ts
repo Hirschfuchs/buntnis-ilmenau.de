@@ -1,3 +1,5 @@
+import { Type } from '@angular/core';
+
 /**
  * Modellierung einer beliebigen Buntnis-Seite
  *
@@ -29,7 +31,7 @@ export type Page = {
    */
   internalName?: string;
   /** Komponente, durch welche die Seite dargestellt wird */
-  component: BuntnisPageComponent;
+  pageComponentFrame: BuntnisPageComponent;
   /**
    * Liste von Alternativnamen, unter denen die Seite aufgerufen werden kann
    * Ermöglicht, die Seite auch bei Umbenennung noch erreichen zu können
@@ -58,4 +60,6 @@ export type Mainpage = Page & {
  * @experimental
  * @see Page
  */
-export class BuntnisPageComponent {}
+export type BuntnisPageComponent = {
+  component: Type<any>;
+};
