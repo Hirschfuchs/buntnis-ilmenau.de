@@ -1,6 +1,17 @@
-<div class="header bar">
+<mat-toolbar>
   <span>LOGO (folgt)</span>
-  <span>Buntnis Ilmenau</span>
+  <nav mat-tab-nav-bar>
+    @for (buntnispage of mainpages; track buntnispage) {
+    <a
+      mat-tab-link
+      [routerLink]="buntnispage.url"
+      routerLinkActive
+      #routerLink="routerLinkActive"
+      [active]="routerLink.isActive"
+      >{{ buntnispage.name }}</a
+    >
+    }
+  </nav>
   <span
     ><a href="https://github.com/Hirschfuchs/buntnis-ilmenau.de" target="_blank"
       ><img
@@ -10,4 +21,4 @@
         alt="Github-Logo"
         class="head-icon" /></a
   ></span>
-</div>
+</mat-toolbar>

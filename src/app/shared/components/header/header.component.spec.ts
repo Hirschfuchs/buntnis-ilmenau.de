@@ -1,7 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderComponent } from './header.component';
 import { NgOptimizedImage } from '@angular/common';
+import { HeaderComponent } from './header.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
@@ -10,7 +12,7 @@ describe('HeaderComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [HeaderComponent],
-      imports: [NgOptimizedImage],
+      imports: [NgOptimizedImage, MatTabsModule, MatToolbarModule],
     }).compileComponents();
 
     fixture = TestBed.createComponent(HeaderComponent);
