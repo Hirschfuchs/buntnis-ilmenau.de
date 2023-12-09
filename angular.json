@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "buntnis-ilmenau-de:build:production"
+              "buildTarget": "buntnis-ilmenau-de:build:production"
             },
             "development": {
-              "browserTarget": "buntnis-ilmenau-de:build:development"
+              "buildTarget": "buntnis-ilmenau-de:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "buntnis-ilmenau-de:build"
+            "buildTarget": "buntnis-ilmenau-de:build"
           }
         },
         "test": {
