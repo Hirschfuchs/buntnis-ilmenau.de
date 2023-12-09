@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './buntes-ilmenau.component.html',
-  styleUrl: './buntes-ilmenau.component.scss'
+  styleUrl: './buntes-ilmenau.component.scss',
 })
-export class BuntesIlmenauComponent {
-
-}
+export class BuntesIlmenauComponent {}

@@ -1,6 +1,6 @@
 import { Route, Routes } from '@angular/router';
-import { ComingSoonComponent } from './wartung/coming-soon/coming-soon.component';
 import { pages } from './shared/types/pages';
+import { ComingSoonComponent } from './wartung/coming-soon/coming-soon.component';
 
 export const routes: Routes = pages
   .map(
