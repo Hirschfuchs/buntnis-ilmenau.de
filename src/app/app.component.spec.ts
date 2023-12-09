@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
+import { MatTabsModule } from '@angular/material/tabs';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { SharedComponentsModule } from './shared/components/shared-components.module';
@@ -7,7 +8,12 @@ import { SharedComponentsModule } from './shared/components/shared-components.mo
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule, SharedComponentsModule, AppComponent],
+      imports: [
+        RouterTestingModule,
+        SharedComponentsModule,
+        AppComponent,
+        MatTabsModule,
+      ],
       declarations: [ComingSoonTestComponent],
     }).compileComponents();
   });

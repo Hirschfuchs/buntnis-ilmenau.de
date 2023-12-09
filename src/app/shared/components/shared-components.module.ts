@@ -2,7 +2,7 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 
 @NgModule({
@@ -15,6 +15,7 @@ import { HeaderComponent } from './header/header.component';
     MatTabsModule,
     RouterLink,
     RouterLinkActive,
+    RouterOutlet,
   ],
 })
 export class SharedComponentsModule {}

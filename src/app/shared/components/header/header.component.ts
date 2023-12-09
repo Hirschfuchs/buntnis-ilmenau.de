@@ -10,6 +10,7 @@ import { pages } from '../../types/pages';
 export class HeaderComponent {
   mainpages = pages;
 
-  @Input()
-  tabPanel: MatTabNavPanel | undefined;
+  @Input({ required: true })
+  tabPanel!: MatTabNavPanel;
+  replacementPanel: MatTabNavPanel | undefined;
 }
