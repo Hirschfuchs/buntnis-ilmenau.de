@@ -1,4 +1,8 @@
 import { BuntnisPageComponent, Mainpage } from './pages.model';
+import { IndexComponent } from '../../one-page-areas/index/index.component';
+import { UeberUnsComponent } from '../../one-page-areas/ueber-uns/ueber-uns.component';
+import { BuntesIlmenauComponent } from '../../one-page-areas/buntes-ilmenau/buntes-ilmenau.component';
+import { KontaktComponent } from '../../kontakt/kontakt.component';
 
 export const pages: Mainpage[] = [
   {
@@ -6,26 +10,26 @@ export const pages: Mainpage[] = [
     url: '',
     name: 'Buntnis Ilmenau',
     shortname: 'Buntnis',
-    component: new BuntnisPageComponent(),
+    pageComponentFrame: { component: IndexComponent },
   },
   {
     internalName: 'Über uns',
     url: 'ueber-uns',
     name: 'Wer sind wir?',
     shortname: 'Über uns',
-    component: new BuntnisPageComponent(),
+    pageComponentFrame: { component: IndexComponent },
   },
   {
     internalName: 'Buntes Ilmenau',
     url: 'ilmenau-bunt',
     name: 'Buntnis Ilmenau',
     shortname: 'Buntnis',
-    component: new BuntnisPageComponent(),
+    pageComponentFrame: { component: IndexComponent },
   },
   {
     internalName: 'Kontakt',
     url: 'kontakt',
     name: 'Kontakt',
-    component: new BuntnisPageComponent(),
+    pageComponentFrame: { component: IndexComponent },
   },
 ];
