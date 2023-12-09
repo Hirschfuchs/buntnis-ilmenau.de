@@ -1,8 +1,8 @@
-import { BuntnisPageComponent, Mainpage } from './pages.model';
+import { KontaktComponent } from '../../kontakt/kontakt.component';
+import { BuntesIlmenauComponent } from '../../one-page-areas/buntes-ilmenau/buntes-ilmenau.component';
 import { IndexComponent } from '../../one-page-areas/index/index.component';
 import { UeberUnsComponent } from '../../one-page-areas/ueber-uns/ueber-uns.component';
-import { BuntesIlmenauComponent } from '../../one-page-areas/buntes-ilmenau/buntes-ilmenau.component';
-import { KontaktComponent } from '../../kontakt/kontakt.component';
+import { Mainpage } from './pages.model';
 
 export const pages: Mainpage[] = [
   {

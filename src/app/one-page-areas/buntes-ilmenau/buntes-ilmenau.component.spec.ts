@@ -8,10 +8,9 @@ describe('BuntesIlmenauComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BuntesIlmenauComponent]
-    })
-    .compileComponents();
-    
+      imports: [BuntesIlmenauComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(BuntesIlmenauComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
