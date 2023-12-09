@@ -17,19 +17,19 @@ export const pages: Mainpage[] = [
     url: 'ueber-uns',
     name: 'Wer sind wir?',
     shortname: 'Über uns',
-    pageComponentFrame: { component: IndexComponent },
+    pageComponentFrame: { component: UeberUnsComponent },
   },
   {
     internalName: 'Buntes Ilmenau',
     url: 'ilmenau-bunt',
     name: 'Buntnis Ilmenau',
     shortname: 'Buntnis',
-    pageComponentFrame: { component: IndexComponent },
+    pageComponentFrame: { component: BuntesIlmenauComponent },
   },
   {
     internalName: 'Kontakt',
     url: 'kontakt',
     name: 'Kontakt',
-    pageComponentFrame: { component: IndexComponent },
+    pageComponentFrame: { component: KontaktComponent },
   },
 ];
