@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule, SharedComponentsModule],
-      declarations: [AppComponent, ComingSoonTestComponent],
+      imports: [RouterTestingModule, SharedComponentsModule, AppComponent],
+      declarations: [ComingSoonTestComponent],
     }).compileComponents();
   });
 
