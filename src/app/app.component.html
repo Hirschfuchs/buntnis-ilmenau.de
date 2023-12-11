@@ -1,10 +1,10 @@
 <header>
-  <app-header></app-header>
+  <app-header [tabPanel]="tabPanel"></app-header>
 </header>
 
 <h1>Buntnis Ilmenau</h1>
 <h2>Für Demokratie und Weltoffenheit</h2>
 
-<app-coming-soon />
-
-<router-outlet />
+<mat-tab-nav-panel #tabPanel>
+  <router-outlet />
+</mat-tab-nav-panel>
