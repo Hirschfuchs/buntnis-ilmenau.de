@@ -8,8 +8,7 @@ export const pages: Mainpage[] = [
   {
     internalName: 'index',
     url: '',
-    name: 'Buntnis Ilmenau',
-    shortname: 'Buntnis',
+    name: 'Buntnis',
     pageComponentFrame: { component: IndexComponent },
   },
   {
@@ -22,7 +21,7 @@ export const pages: Mainpage[] = [
   {
     internalName: 'Buntes Ilmenau',
     url: 'ilmenau-bunt',
-    name: 'Buntnis Ilmenau',
+    name: 'Buntes Ilmenau',
     shortname: 'Buntnis',
     pageComponentFrame: { component: BuntesIlmenauComponent },
   },

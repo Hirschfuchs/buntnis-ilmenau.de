@@ -17,5 +17,5 @@ import { ComingSoonComponent } from './wartung/coming-soon/coming-soon.component
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'buntnis-ilmenau-de';
+  title = 'Buntnis Ilmenau';
 }
