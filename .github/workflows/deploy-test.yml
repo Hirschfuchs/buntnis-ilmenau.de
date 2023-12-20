@@ -3,7 +3,7 @@ name: Buntnis-Deployment Test
 on:
   push:
     branches:
-      - "main"
+      - "66-ag-website-231114"
 
 jobs:
   build:
