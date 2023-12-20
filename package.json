@@ -9,7 +9,8 @@
     "test": "ng test",
     "test-cov-dev": "ng test --code-coverage",
     "test-cov-headless": "ng test --code-coverage --watch=false --browsers=ChromeHeadless",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "generate-docs": "node docs/generate-docs.js"
   },
   "private": true,
   "dependencies": {
