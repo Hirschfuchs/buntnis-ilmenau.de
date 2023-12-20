@@ -1,5 +1,55 @@
-== Test
+== Dokumentation Buntnis Ilmenau
 
-Dies ist ein Testdokument.
+Dies ist die Dokumentation der technischen Infrastruktur des Buntnis Ilmenau.
+In diesem Dokument sind Zweck, Aufbau, Funktionsweise und Bedienung der einzelnen IT-Komponenten beschrieben.
+Die Dokumentation gibt Auskunft, wie das System betrieben und bedient werden kann.
+Weiterhin protokolliert und begründet sie Entscheidungen.
+In ihr enthalten sind auch Kontaktdaten, weitere Tools und Angaben zur IT-Sicherheit.
+
+=== Zielbild der IT-Komponenten
+
+Das Bündnis stellt gewisse Anforderungen an seine technischen Komponenten.
+Diese sind nachfolgend aufgelistet und sollten bei allen wesentlichen Entscheidungen betrachtet werden.
+
+* *dezentral*
+** die bisherigen technischen Komponenten liegen in den Händen einzelner Buntnis-Mitglieder.
+Dies hat den großen Nachteil, dass der Auftritt des Buntnis und die Administration der Inhalte alleinig bei diesen Mitgliedern liegen.
+** Das Ziel des Neuaufbaus ist nicht nur die Verlagerung auf mehrere Personen, sondern auch ein gänzlich dezentrales Angebot.
+Die Infrasturktur des Buntnis soll von allen Mitgliedern nachgebaut werden können.
+** Mit entsprechenden Schlüsseln kann so auch gänzlich die Kontrolle übernommen werden (siehe <<sicher>>)
+* *vereinend*
+** wir wollen unsere IT-Komponenten möglichst nah beieinander halten
+** somit soll ein Zustand wie bisher vermieden werden - es soll einen Ort geben, an dem ich mich informieren kann, statt verschiedenste Systeme zu nutzen
+* *administrierbar*
+** die Komponenten sollen so gut beschrieben sein, dass jeder nach entsprechendem Einlesen in der Lage sein soll, sie zu betreiben.
+Dazu gehören Fragen, wie:
+*** "Welche Komponenten gehören dazu?"
+*** "Wie setze ich die IT-Komponenten des Buntnis auf? Was benötige ich?"
+*** "Wie starte und betreíbe ich die IT-Komponenten?"
+*** "Wie kann ich Probleme beheben? Wie kann ich das System weiterentwickeln?"
+* [#sicher]*sicher*
+** dass das Buntnis Transparenz über seine technischen Komponenten bietet, bedeutet auch, dass sich entsprechende Gedanken über das Thema Sicherheit gemacht werden sollten
+** Schlüssel & Passwörter müssen verschlüsselt und geschützt werden.
+Nur ausgewählte Mitglieder sollten vollständigen Zugang zu diesen haben.
+Im Optimalfall kann ein Rollensystem etabliert werden, das unterschiedlichen Mitgliedern unterschiedliche Informationen bereitstellt.
+* einfach *bedienbar*
+** ob Webseite oder Mailverteiler - wir als Bündnis wollen mit unserer Technik niemanden ausschließen.
+Daher muss sichergestellt werden, dass auch technisch unbedarfte Nutzer in der Lage sind, unsere Inhalte nutzen zu können.
+** Das gilt sowohl für interessierte Nutzer unserer externen Angebote (Webpräsenz, Newsletter ...),
+als auch für unsere Mitglieder (Mailverteiler, Protokoll ...)
+* einfach *steuerbar*
+** wir als Buntnis müssen Kontrolle über unsere Inhalte haben
+** auch Nicht-Informatiker müssen verschiedene Arbeiten durchgeführt werden können:
+*** kleine Änderungen an der Seite machen
+*** News hinzufügen
+*** Kontaktdaten aktualisieren
+*** Verteilerliste aktualisieren
+*** ...
+* *aktuell*
+** wir wollen vermeiden, dass die Inhalte unserer Systeme bereits nach kurzer Zeit veraltet sind
+** dafür ist es nötig, dass regelmäßig am System gearbeitet wird - sowohl technisch als auch inhaltlich
+** auch hier ist eine einfache Bedienung und eine vereinte Zusammenkunft aller Komponenten essenziell
+
+=== Dokumente
 
 xref:{docdir}/dokumentation/index.adoc[Aufbau der Dokumentation]
