@@ -2,4 +2,4 @@
 
 Dies ist ein Testdokument.
 
-include::{docdir}/dokumentation/index.adoc[]
+xref:{docdir}/dokumentation/index.adoc[Aufbau der Dokumentation]
