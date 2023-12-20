@@ -1,0 +1,10 @@
+
+:host {
+  display: block;
+  border-radius: 50%;
+  max-width: 150px;
+  aspect-ratio: 1/1;
+
+  background-color: beige;
+  background-image: url(var(--bg-image));
+}
