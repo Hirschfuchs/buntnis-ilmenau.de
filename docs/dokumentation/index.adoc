@@ -3,7 +3,6 @@
 In diesem Abschnitt ist der Aufbau und die Funktionsweise der Dokumentation beschrieben.
 Ziel ist es, ein Bild über die Inhalte und die Fähigkeit der Bearbeitung dieser zu vermitteln.
 
-=== Technische Grundlage
+include::{docdir}/technische-grundlage.adoc[]
 
-Die Dokumentation basiert auf Asciidoctor.js.
-Das Tool wandelt `.adoc`-Dateien in eine HTML-Dokumentation um.
+include::{docdir}/inhaltsbeschreibung.adoc[]
