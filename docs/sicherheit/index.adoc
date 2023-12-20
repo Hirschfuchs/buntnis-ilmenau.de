@@ -1,0 +1,81 @@
+== Sicherheitskonzept Buntnis Ilmenau
+
+Als politisches Bündnis sind wir als Buntnis Ilmenau anfälliger für Angriffe und Diffamierung.
+Daher sollten wir uns über die sicherheitsrelevanten Teile unserer IT bewusst sein und gewisse Entscheidungen abwägen.
+
+Dieses Konzept beleuchtet verschiedene Teile der Anwendung getrennt voneinander und analysiert jeweilige Sicherheitsrisiken.
+
+=== Web
+==== Frontend-Code
+
+Im Sinne der Dezentralisierung liegt der Code unseres Frontends aktuell öffentlich auf Github.
+Der Vorteil, den uns dieses Vorgehen bietet ist, dass unser Frontend mit geringem Aufwand übernommen werden kann.
+Somit ist die Verantwortung aufgeteilt.
+
+====
+Also kann jeder an unserer Seite rumpfuschen?
+
+Nein. Frei ermöglicht ist lesender Zugriff auf unseren Code.
+Der Code steht in einem `Repository`, welches geklont und dort verändert werden kann.
+Alle Änderungen an unserem Code müssen mittels eines `Pull Requests` beantragt und von uns bestätigt werden.
+====
+
+====
+Also kann jeder meine Seite kopieren?
+
+Ja. Mit entsprechenden Anpassungen kann ein Replikat unserer Infrastruktur erzeugt werden.
+Dies ist allerdings im gesamten Web möglich.
+Wer das Know-How hat, unsere Buntnisseite zu kopieren, kann dies auch ohne Zugriff auf Github tun.
+====
+
+====
+Welche Gefahren bietet solch ein Vorgehen?
+
+Der öffentliche Zugriff auf unseren Code stellt kein höheres Risiko dar, wenn wir uns an einfache Sicherheitsvorgaben halten.
+Die größten Risiken sind:
+
+* Sicherheitslücken & veraltete Abhängigkeiten
+** da Angreifer einfacher erkennen können, auf welchen Technologien unser Frontend basiert, können Angriffe gezielter auf deren Schwachstellen ausgerichtet werden
+** dieses Risiko kann überwunden werden, wenn die Abhängigkeiten aktuell sind
+** daher aktualisiert ein `Renovate-Bot` unsere Anwendung konstant
+* einchecken oder offenbaren vertraulicher Informationen
+** niemals sollten vertrauliche Informationen im Code erscheinen.
+Passwörter, Schlüssel oder vertrauliche Daten sollten stets verschlüsselt an den Server übertragen und nur dort ausgewertet werden
+** neben dem direkten Hochladen vertraulicher Infos kann auch das versehentliche Offenbaren im Build-Prozess ein Problem sein
+** mit entsprechender Vorsicht und Tests ist dies kein großes Risiko
+* CORS
+** wird unsere Anwendung an anderer Stelle kopiert, könnte sich ein Angreifer als unsere Anwendung tarnen
+** hier ist lediglich eine Sicherheitskonfiguration (beispielsweise in Form von `CORS-Regeln`) von Nöten
+====
+
+Da das Risiko als gering eingestuft werden kann und der Nutzen überwiegt, würde ich dieses Vorgehen vorschlagen.
+Dies muss durch einen Beschluss bestätigt werden.
+
+==== Backend
+-
+
+==== Interne Schnittstellen
+-
+
+==== Öffentliche Schnittstellen
+-
+
+==== Datenbankzugriff
+-
+
+=== Secrets
+==== Passwörter
+-
+
+==== API-Schlüssel
+-
+
+=== Mails
+==== Mail-Verteiler
+-
+
+==== Technische Basis
+-
+
+==== Inhalte & Umgang Mails
+-
