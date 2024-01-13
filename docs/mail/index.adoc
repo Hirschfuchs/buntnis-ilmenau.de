@@ -64,41 +64,4 @@ Die Domain nimmt alle Mails entgegen, die an eine `@buntnis-ilmenau.de`- oder `@
 
 An dieser Stelle kann ein SMTP-Relay-Service eingebunden werden, der die Nachrichten entgegennimmt und nach bestimmten Regeln weiterleitet.
 
-Wir verwenden Amazon SES (Simple E-Mail Service).
-Dieses ist ein äußerst günstiger und skalierbarer SMTP-Service.
-Im Gegensatz zu anderen Services ermöglicht es uns zu einem sehr geringen Preis beliebig viele Mails weiterzuleiten, während es alle Steuerungsmöglichkeiten bietet (von wo, nach wo usw.)
-Das inkludiert auch ein Dashboard zur Übericht über Mail-Verkehr und fehlgeschlagene Mail-Versuche, sowie hohe Sicherheitsstandards zur Verifikation von Absendern.
-
 === Anleitung zum Aufsetzen des Mail-Systems
-
-https://docs.aws.amazon.com/de_de/ses/latest/dg/sending-email-list-management.html
-
-. Login in AWS (https://aws.amazon.com/de/) und Auswahl von SES
-. Erste Einrichtung wählen & Mail-Adresse `tech@buntnis-ilmenau.de` angeben
-. Buntnis-Domain hinzufügen
-. Mail verifizieren
-. DKIM (DomainKeys Identified Mail)-Prozess starten (`Sendedomäne verifizieren`)
-** Sendedomäne verifizieren -> kopieren der benötigten DNS-Records
-** Beim Domain-Provider DNS-Konfiguration anpassen:
-** CNAME-Records entsprechend Angaben von Amazon hinzufügen
-. ggf. kann der Virtual Deliverability Manager angeschaltet werden.
-Er bietet ein Dashboard mit zusätzlichen Informationen, wie Klickraten und anderen Statistiken.
-. Abschließend muss noch eine Authentifizierung bei Amazon durchgeführt werden.
-Hier reicht eine kurze Beschreibung der geplanten Maßnahmen.
-
-====
-Als Demokratiebündnis benötigen wir den Mail-Service, um sowohl unsere internen Mail-Verteiler zu realisieren, als auch externen Interessierten einen Newsletter bereitstellen zu können.
-====
-
-==== List- & Subscription-Management
-
-siehe https://docs.aws.amazon.com/ses/latest/dg/sending-email-list-management.html
-
-SES hat ein eingebautes Listenmanagement.
-Dieses kann Mailing-Listen, sogenannte `Kontaktlisten` verwalten, in der die Kontakte stehen, die auf ein Thema abonniert haben.
-Daran angeschlossen ist auch ein Subscription Management, das beispielsweise automatische Unsubscribe-Links an versendete Mails anhängt.
-
-Dazu müssen wir nun in die AWS-CLI oder ein SDK der Wahl wechseln.
-
-IMPORTANT: In der EU ist das Empfangen von Mails mit Amazon SES nicht möglich.
-Ich muss doch weiter suchen-.-
