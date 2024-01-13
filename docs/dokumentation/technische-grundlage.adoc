@@ -1,0 +1,4 @@
+=== Technische Grundlage
+
+Die Dokumentation basiert auf Asciidoctor.js.
+Das Tool wandelt `.adoc`-Dateien in eine HTML-Dokumentation um.

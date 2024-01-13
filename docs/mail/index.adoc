@@ -1,0 +1,69 @@
+:sectnums:
+== Dokumentation E-Mail
+
+Als politisches Bündnis sind wir sowohl intern als auch in der Außenwirkung und Vernetzung auf eine stabile, zuverlässige Kommunikation angewiesen.
+E-Mail ist dabei ein zentraler Bestandteil.
+Wir möchten auch bei der Mail darauf achten, dass die Kontrolle nicht nur in einer Hand liegt und das System anpassbar ist.
+
+=== Ausgangssituation
+
+Bisher hat Steffi alleine die E-Mail-Verteiler des Buntnis verwaltet.
+Der Nachteil hier ist, dass wir als Buntnis die Liste der Einträge auf den Verteilern kaum administrieren können.
+Änderungen, Neuzugänge und Abgänge müssen so immer über die eine zuständige Person laufen.
+
+Wir möchten eine neue Lösung etablieren, bei der folgende Bedingungen erfüllt sind:
+
+* Die Administration der Liste (Ändern/Hinzufügen/Entfernen) soll einfach möglich sein
+Die Optimallösung wäre hier, ein Rollensystem zu haben, bei dem nur ein kleiner Kreis volle Kontrolle hat, ein erweiterter Kreis aber Ergänzungen machen kann.
+* Es soll die Möglichkeit geben, dass sich ggf. jeder auf eine externe Liste eintragen kann.
+So könnte eine Art Newsletter geschaffen werden.
+* Ist die hauptverantwortliche Person nicht mehr zuständig, soll die geschaffene Infrastruktur einfach umgezogen werden können.
+Die Dokumentation soll so vollständig sein, dass das System jederzeit 1:1 übernommen werden kann.
+
+Durch das Reservieren der Buntnis-Domains `buntnis-ilmenau.de` und `buntnis.de` wurde es uns außerdem möglich, die Mail-Verteiler-Adressen mit der Buntnis-Domain zu versehen.
+
+=== Konzeption des neuen Systems
+
+Benötigt werden drei Adressen:
+
+. Info (info@buntnis-ilmenau.de)
+. Intern (intern@buntnis-ilmenau.de)
+. Extern (news@buntnis-ilmenau.de)
+
+Diese haben unterschiedliche Anforderungen, wer an sie senden kann und an wen sie weiterleiten.
+
+==== Info
+
+Jeder -> `info@buntnis-ilmenau.de` -> Liste[ausgewählte Buntnis-Mitglieder]
+
+Die Info-Adresse ist die Adresse, über die man von Außen das Buntnis kontaktieren kann.
+Sie empfängt daher von beliebigen Mailadressen Mails und leitet diese an die Buntnis-Mitglieder weiter, die aktiv die Mails ans Buntnis erhalten wollen.
+Das Versenden von der Info-Adresse soll auch möglich sein.
+Dazu sind SMTP-Daten notwendig, die derzeit nur an einen kleinen Personenkreis ausgegeben werden sollen.
+
+==== Intern
+
+Liste[Alle Mitglieder] -> `intern@buntnis-ilmenau.de` -> Liste[Alle Mitglieder]
+
+Die interne Adresse ist die Möglichkeit, dass Buntnis-Mitglieder alle anderen Buntnis-Mitglieder erreichen können.
+So sind Sender- und Empfänger-Liste hier identisch.
+
+==== Extern
+
+Liste[ausgewählte Buntnis-Mitglieder] -> `news@buntnis-ilmenau.de` -> Liste[jeder Interessierte]
+
+Die externe Adresse ist die Adresse, die jeder Interessierte abonnieren kann.
+Da diese Interessierten eine Mail von der offiziellen `buntnis-ilmenau.de`-Domain erhalten, sollte auch hier gut ausgewählt werden, wer das Recht erhält, über diese Adresse zu versenden.
+Insgesamt sollte auf dieser Adresse Disziplin herrschen, sodass pro Monat maximal 2-3 Mails vom Buntnis gesendet werden.
+Alles andere ist unnötige Belastung für die Abonnenten des Buntnis.
+
+=== Technische Komponenten
+
+Die Domain nimmt alle Mails entgegen, die an eine `@buntnis-ilmenau.de`- oder `@buntnis.de`-Adresse gerichtet sind.
+Über einen sogenannten `MX-Record` wird gesteuert, wohin diese Mails weitergeleitet werden.
+
+An dieser Stelle kann ein SMTP-Relay-Service eingebunden werden, der die Nachrichten entgegennimmt und nach bestimmten Regeln weiterleitet.
+
+Wir nutzen MailerSend durch das gute kostenfreie Angebot, viele für uns passende Optionen, eine übersichtliche Oberfläche und Integrationen, wie Pipedream.
+
+// Todo: Aufsetzen des Mail-Verteilers in Schritt-für-Schritt-Anleitung
