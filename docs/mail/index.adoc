@@ -64,4 +64,6 @@ Die Domain nimmt alle Mails entgegen, die an eine `@buntnis-ilmenau.de`- oder `@
 
 An dieser Stelle kann ein SMTP-Relay-Service eingebunden werden, der die Nachrichten entgegennimmt und nach bestimmten Regeln weiterleitet.
 
-=== Anleitung zum Aufsetzen des Mail-Systems
+Wir nutzen MailerSend durch das gute kostenfreie Angebot, viele für uns passende Optionen, eine übersichtliche Oberfläche und Integrationen, wie Pipedream.
+
+// Todo: Aufsetzen des Mail-Verteilers in Schritt-für-Schritt-Anleitung
