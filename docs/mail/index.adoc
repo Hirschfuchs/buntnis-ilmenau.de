@@ -1,0 +1,14 @@
+:sectnums:
+== Dokumentation E-Mail
+
+Als politisches Bündnis sind wir sowohl intern als auch in der Außenwirkung und Vernetzung auf eine stabile, zuverlässige Kommunikation angewiesen.
+E-Mail ist dabei ein zentraler Bestandteil.
+Wir möchten auch bei der Mail darauf achten, dass die Kontrolle nicht nur in einer Hand liegt und das Sytsem anpassbar ist.
+
+=== Ausgangssituation
+
+=== Konzeption des neuen Systems
+
+=== Technische Komponenten
+
+=== Anleitung zum Aufsetzen des Mail-Systems

@@ -55,3 +55,4 @@ als auch für unsere Mitglieder (Mailverteiler, Protokoll ...)
 
 * xref:{docdir}/dokumentation/index.adoc[Aufbau der Dokumentation]
 * xref:{docdir}/sicherheit/index.adoc[Sicherheitskonzept]
+* xref:{docdir}/mail/index.adoc[E-Mail-Konzept]
