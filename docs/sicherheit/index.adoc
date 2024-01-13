@@ -1,3 +1,4 @@
+:sectnums:
 == Sicherheitskonzept Buntnis Ilmenau
 
 Als politisches Bündnis sind wir als Buntnis Ilmenau anfälliger für Angriffe und Diffamierung.

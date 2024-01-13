@@ -1,3 +1,4 @@
+:sectnums:
 == Aufbau der Dokumentation
 
 In diesem Abschnitt ist der Aufbau und die Funktionsweise der Dokumentation beschrieben.
