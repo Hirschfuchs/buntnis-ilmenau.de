@@ -16,6 +16,8 @@ jobs:
         run: npm ci
       - name: Projekt bauen
         run: npm run build
+      - name: Dokumentation bauen
+        run: npm run generate-docs
       - uses: actions/upload-artifact@master
         with:
           name: result
