@@ -7,7 +7,7 @@ const Asciidoctor = asciidoctor();
 console.log("Generiere Dokumentation ...", "...", "...");
 
 const documents = new Glob("docs/**/*.adoc", { nocase: true }).walkSync();
-const docsDir = "dist/buntnis-ilmenau-de/docs";
+const docsDir = "dist/buntnis-ilmenau-de";
 
 console.log(`${documents.length} Dateien zu erzeugen`);
 
