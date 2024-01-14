@@ -1,12 +1,26 @@
-$circle-width: 20rem;
+@import "../../../schema";
 
+$circle-width: 250px;
+$circle-min-width: 25vw;
+$circle-max-width: 20vh;
+
+$circle1-color: $crimson;
+$circle2-color: $xanthous;
+$circle3-color: $cerulean;
+
+#landing-area{
+  height: 100vh;
+}
 header::ng-deep {
   display: none;
 }
 
 #landing-circles {
-  height: 100vh;
+  height: 75vh;
   width: 100vw;
+
+  position: relative;
+  overflow: hidden;
 }
 
 .circles {
@@ -28,11 +42,17 @@ header::ng-deep {
 .circles:first-child {
   left: 0;
   transform: translateX(-50%);
+  z-index: 2;
+
+  .outer-circle {
+    border-color: $circle1-color;
+  }
 
   .circle {
     left: 100vh;
     top: 50vh;
     transform: translateX(-100%) translateY(-50%);
+    background-color: $circle1-color;
   }
 }
 
@@ -41,22 +61,34 @@ header::ng-deep {
   left: 50%;
   bottom: 0;
   transform: translateX(-50%) translateY(50%);
+  z-index: 1;
+
+  .outer-circle {
+    border-color: $circle2-color;
+  }
 
   .circle {
     left: 50%;
     bottom: 100vh;
     transform: translateX(-50%) translateY(100%);
+    background-color: $circle2-color;
   }
 }
 
 .circles:last-child {
   right: 0;
   transform: translateX(50%);
+  z-index: 1;
+
+  .outer-circle {
+    border-color: $circle3-color;
+  }
 
   .circle {
     right: 100vh;
     top: 50vh;
     transform: translateX(100%) translateY(-50%);;
+    background-color: $circle3-color;
   }
 }
 
@@ -66,6 +98,10 @@ header::ng-deep {
 
   height: $circle-width;
   width: $circle-width;
+  min-height: $circle-min-width;
+  min-width: $circle-min-width;
+  max-height: $circle-max-width;
+  max-width: $circle-max-width;
   border-radius: 50%;
 
   align-items: center;
@@ -75,7 +111,20 @@ header::ng-deep {
   background-color: #0f0f17;
 }
 
-@media (max-aspect-ratio: 2/1) {
+#testbereich {
+  height: 100vh;
+  background-color: $crimson;
+}
+#testbereich2 {
+  height: 100vh;
+  background-color: $xanthous;
+}
+#testbereich3 {
+  height: 100vh;
+  background-color: $office-green;
+}
+
+@media (max-aspect-ratio: 9/5) {
   #landing-circles {
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +136,8 @@ header::ng-deep {
     position: relative;
     width: $circle-width;
     height: $circle-width;
+    max-height: $circle-max-width;
+    max-width: $circle-max-width;
     left: 0 !important;
     top: 0 !important;
     transform: none !important;
