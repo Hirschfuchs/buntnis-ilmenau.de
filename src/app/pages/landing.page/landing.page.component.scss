@@ -1,0 +1,105 @@
+$circle-width: 20rem;
+
+header::ng-deep {
+  display: none;
+}
+
+#landing-circles {
+  height: 100vh;
+  width: 100vw;
+}
+
+.circles {
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+}
+
+.outer-circle {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  box-sizing: border-box;
+  border: 1rem solid;
+  border-radius: 50%;
+}
+
+.circles:first-child {
+  left: 0;
+  transform: translateX(-50%);
+
+  .circle {
+    left: 100vh;
+    top: 50vh;
+    transform: translateX(-100%) translateY(-50%);
+  }
+}
+
+/** Todo: Umgang mit mehr als 3 Children */
+.circles:nth-child(2) {
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) translateY(50%);
+
+  .circle {
+    left: 50%;
+    bottom: 100vh;
+    transform: translateX(-50%) translateY(100%);
+  }
+}
+
+.circles:last-child {
+  right: 0;
+  transform: translateX(50%);
+
+  .circle {
+    right: 100vh;
+    top: 50vh;
+    transform: translateX(100%) translateY(-50%);;
+  }
+}
+
+.circle {
+  display: flex;
+  position: absolute;
+
+  height: $circle-width;
+  width: $circle-width;
+  border-radius: 50%;
+
+  align-items: center;
+
+  justify-content: center;
+  color: white;
+  background-color: #0f0f17;
+}
+
+@media (max-aspect-ratio: 2/1) {
+  #landing-circles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .circles {
+    position: relative;
+    width: $circle-width;
+    height: $circle-width;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+
+    .circle {
+      position: relative;
+      left: 0 !important;
+      top: 0 !important;
+      transform: none !important;
+    }
+  }
+
+  .outer-circle {
+    display: none;
+  }
+}
