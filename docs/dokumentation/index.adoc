@@ -3,6 +3,6 @@
 In diesem Abschnitt ist der Aufbau und die Funktionsweise der Dokumentation beschrieben.
 Ziel ist es, ein Bild über die Inhalte und die Fähigkeit der Bearbeitung dieser zu vermitteln.
 
-include::{docdir}/technische-grundlage.adoc[]
+include::technische-grundlage.adoc[]
 
-include::{docdir}/inhaltsbeschreibung.adoc[]
+include::inhaltsbeschreibung.adoc[]

@@ -52,5 +52,5 @@ als auch für unsere Mitglieder (Mailverteiler, Protokoll ...)
 
 === Dokumente
 
-* xref:{docdir}/dokumentation/index.adoc[Aufbau der Dokumentation]
-* xref:{docdir}/sicherheit/index.adoc[Sicherheitskonzept]
+* xref:dokumentation/index.adoc[Aufbau der Dokumentation]
+* xref:sicherheit/index.adoc[Sicherheitskonzept]
