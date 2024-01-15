@@ -3,7 +3,7 @@ name: Buntnis-Deployment Test
 on:
   push:
     branches:
-      - "demo"
+      - "main"
 
 jobs:
   build:
