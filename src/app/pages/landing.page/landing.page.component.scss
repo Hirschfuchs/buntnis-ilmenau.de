@@ -8,11 +8,23 @@ $circle1-color: $crimson;
 $circle2-color: $xanthous;
 $circle3-color: $cerulean;
 
+
 #landing-area{
   height: 100vh;
 }
-header::ng-deep {
-  display: none;
+#headline {
+  height: 25vh;
+
+  h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 700;
+    font-size: 10vh;
+  }
+
+  h2 {
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+  }
 }
 
 #landing-circles {
@@ -21,6 +33,9 @@ header::ng-deep {
 
   position: relative;
   overflow: hidden;
+
+  font-family: "Hind", sans-serif;
+  font-weight: 700;
 }
 
 .circles {
@@ -104,11 +119,24 @@ header::ng-deep {
   max-width: $circle-max-width;
   border-radius: 50%;
 
+  font-size: 5vh;
+
   align-items: center;
 
   justify-content: center;
   color: white;
   background-color: #0f0f17;
+}
+
+.page-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  * {
+    width: 65%;
+  }
 }
 
 #testbereich {
