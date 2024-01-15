@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { NgxSplideModule } from 'ngx-splide';
+import { LandingPageComponent } from './pages/landing.page/landing.page.component';
 
 @NgModule({
   declarations: [AppComponent, ComingSoonComponent],
@@ -30,6 +31,7 @@ import { NgxSplideModule } from 'ngx-splide';
     MatListModule,
     MatCheckboxModule,
     FormsModule,
+    LandingPageComponent,
     MatCardModule,
     MatGridListModule,
     NgxSplideModule,
